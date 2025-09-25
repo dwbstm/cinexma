@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
+@import "tailwindcss";
+@plugin '../services/providers/hero-ui.ts';
+
+@source "../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}";
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --font-inter: var(--font-inter);
+  --font-playfair: "font", Playfair;
+  --breakpoint-notebook: 480px;
+  --breakpoint-tablet: 640px;
+  --breakpoint-tala: 860px;
+  --breakpoint-laptop: 1024px;
+  --breakpoint-desktop: 1280px;
+  --color-background-dark: #101115;
+  --color-white-base: #f5f5f5;
+  --color-blue-primary: #0084f3;
+  --color-blue-secondary: #4ab9ff;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+@layer base {
+  body {
+    @apply font-inter font-extralight;
+  }
+  iframe {
+    @apply border-none;
+  }
+}
+
+@layer utilities {
+  .absolute-center {
+    @apply absolute top-1/2 left-1/2 float-none -translate-x-1/2 -translate-y-1/2;
+  }
+}
+
+@layer components {
+  .transition-smooth {
+    @apply transition-all duration-150 ease-in;
+  }
+}

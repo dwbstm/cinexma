@@ -1,0 +1,23 @@
+{
+  "name": "Cinexma",
+  "short_name": "Cinexma",
+  "description": "Your only choice for a free movies and series streaming website.",
+  "theme_color": "#101115",
+  "background_color": "#101115",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "lang": "en-US",
+  "icons": [
+    {
+      "src": "/icons/icon-app.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-app.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
