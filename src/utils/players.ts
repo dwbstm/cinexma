@@ -17,15 +17,8 @@ export function getMoviesPlayers(id: string | number) {
       ads: true,
     },
     {
-      title: "VidSrc 1",
-      source: `https://vidsrc.xyz/embed/movie/${id}`,
-      recommended: true,
-      fast: true,
-      ads: true,
-    },
-    {
-      title: "VidSrc 2",
-      source: `https://vidsrc.to/embed/movie/${id}`,
+      title: "VidSrc",
+      source: `https://vidsrc.in/embed/movie/${id}`,
       recommended: true,
       fast: true,
       ads: true,
@@ -82,9 +75,10 @@ export function getSeriesPlayers(id: string | number, season?: number, episode?:
       fast: true,
       ads: true,
     },
+
     {
       title: "VidSrc",
-      source: `https://vidsrc.cc/v3/embed/tv/${id}/${season}/${episode}?autoPlay=false`,
+      source: `https://vidsrc.in/embed/tv?tmdb=${id}&season=${season}&episode=${episode}`,
       recommended: true,
       fast: true,
       ads: true,

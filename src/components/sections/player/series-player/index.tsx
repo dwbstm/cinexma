@@ -75,6 +75,7 @@ const TvShowPlayer: React.FC<SeriesPlayerProps> = ({ id, episode, episodes, ...p
             allowFullScreen
             key={PLAYER.title}
             src={PLAYER.source}
+            referrerPolicy="origin"
             className={cn("z-10 h-full", { "pointer-events-none": idle })}
           />
         </Card>

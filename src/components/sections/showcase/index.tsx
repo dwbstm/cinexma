@@ -67,14 +67,9 @@ const Showcase: React.FC<ShowcaseProps> = ({
 
   return (
     <main className="tablet:max-w-md space-y-6">
-      {/* Logo */}
-      <Logo data={data} showcase={showcase!} />
-
+      <Logo data={data} showcase={showcase!} mediaType={mediaType} />
       <div className="space-y-3">
-        {/* Details */}
         <Details mediaType={mediaType!} showcase={showcase!} data={data!} />
-
-        {/* Overview */}
         <Overview isMediaSelected={isMediaSelected} data={data!} casts={casts} />
       </div>
       {/* Actions */}

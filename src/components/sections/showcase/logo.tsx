@@ -32,7 +32,7 @@ interface LogoProps {
 }
 
 const Logo: React.FC<LogoProps> = ({ showcase, data, mediaType }) => {
-  const title = data.original_language === "id" ? data.name : data.title;
+  const title = data.original_language === "id" ? data.original_title : data.title;
   const name = data.original_language === "id" ? data.original_name : data.name;
 
   const findLogoId = showcase?.images.logos.filter((val) => val.iso_639_1 === "id");

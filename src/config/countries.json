@@ -1,5 +1,5 @@
 [
-  { "iso_639_1": "cn", "english_name": "China", "name": "广州话 / 廣州話" },
+  { "iso_639_1": "zh", "english_name": "China", "name": "普通话" },
   { "iso_639_1": "fi", "english_name": "Finlandia", "name": "suomi" },
   { "iso_639_1": "de", "english_name": "Germany", "name": "Deutsch" },
   { "iso_639_1": "hu", "english_name": "Hongaria", "name": "Magyar" },
@@ -18,7 +18,6 @@
   { "iso_639_1": "ca", "english_name": "Spain", "name": "Català" },
   { "iso_639_1": "sv", "english_name": "Swedia", "name": "svenska" },
   { "iso_639_1": "th", "english_name": "Thailand", "name": "ภาษาไทย" },
-  { "iso_639_1": "zh", "english_name": "Tiongkok", "name": "普通话" },
   { "iso_639_1": "tr", "english_name": "Turkey", "name": "Türkçe" },
   { "iso_639_1": "uk", "english_name": "Ukrainia", "name": "Український" },
   { "iso_639_1": "vi", "english_name": "Vietnam", "name": "Tiếng Việt" }
