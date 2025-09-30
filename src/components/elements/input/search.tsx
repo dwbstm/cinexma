@@ -16,14 +16,16 @@ const SearchInput = ({
   autoFocus,
   placeholder = "Search...",
   isLoading,
-  isDisabled,
+  isClearable,
+  onClear,
 }: SearchInputProps) => {
   const inputRef = useRef<HTMLInputElement>(null);
 
   return (
     <Input
+      isClearable={isClearable}
+      onClear={onClear}
       ref={inputRef}
-      isDisabled={isDisabled}
       autoComplete="off"
       size="lg"
       autoFocus={autoFocus}

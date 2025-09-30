@@ -36,7 +36,7 @@ const MoviePlayerSourceSelection: React.FC<MoviePlayerSourceSelectionProps> = ({
             <span>Recommended</span>
           </div>
           <div className="flex items-center gap-2">
-            <Rocket width={14} height={14} className="text-green-400" />
+            <Rocket width={14} height={14} className="text-green-500" />
             <span>Fast hosting</span>
           </div>
           <div className="flex items-center gap-2">
@@ -59,7 +59,7 @@ const MoviePlayerSourceSelection: React.FC<MoviePlayerSourceSelectionProps> = ({
               endContent: (
                 <div key={`info-${title}`} className="flex flex-wrap items-center gap-2">
                   {recommended && <StarSolid className="text-warning" />}
-                  {fast && <Rocket className="text-danger" />}
+                  {fast && <Rocket className="text-green-500" />}
                   {ads && (
                     <Image src="/icons/ads.svg" alt="icon-ads" className="h-4 w-4 rounded-none" />
                   )}

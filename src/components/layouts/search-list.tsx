@@ -76,10 +76,12 @@ export default function SearchList() {
               transition={{ duration: 0.3 }}
             >
               <SearchInput
+                isClearable
                 placeholder="Search your favorite movies and series..."
                 isLoading={isPending && isSearchTriggered}
                 autoFocus
                 value={searchQuery}
+                onClear={() => setSearchQuery("")}
                 onChange={({ target }) => setSearchQuery(target.value)}
               />
             </motion.div>
